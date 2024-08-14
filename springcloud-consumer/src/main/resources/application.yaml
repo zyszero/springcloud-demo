@@ -6,6 +6,8 @@ spring:
     nacos:
       discovery:
         server-addr: 192.168.200.38:8848
+    loadbalancer:
+      retry:
 
 
 #server:

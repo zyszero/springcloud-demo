@@ -39,19 +39,23 @@ public class SpringCloudConsumerApplication {
     @Bean
     ApplicationRunner runner() {
         return args -> {
-            System.out.println("helloService-consumer started");
+//            System.out.println("helloService-consumer started");
+//
+//            context.getBeansWithAnnotation(FeignClient.class).forEach((k, v) -> {
+//                System.out.println(" FeignClient ==> " + k + " : " + v);
+//            });
+//            System.out.println(Arrays.toString(context.getBeanNamesForType(HelloApiServiceClient.class)));
+//            System.out.println(Arrays.toString(context.getBeanNamesForType(UserApiServiceClient.class)));
+//            Arrays.stream(context.getBeanDefinitionNames())
+//                    .filter(x -> x.contains("hello") || x.contains("user")).forEach(System.out::println);
+//            System.out.println(context.getBean("user.FeignClientSpecification"));
+//            System.out.println(context.getBean("userFeignClient"));
+//
+//            test();
 
-            context.getBeansWithAnnotation(FeignClient.class).forEach((k, v) -> {
-                System.out.println(" FeignClient ==> " + k + " : " + v);
-            });
-            System.out.println(Arrays.toString(context.getBeanNamesForType(HelloApiServiceClient.class)));
-            System.out.println(Arrays.toString(context.getBeanNamesForType(UserApiServiceClient.class)));
-            Arrays.stream(context.getBeanDefinitionNames())
-                    .filter(x -> x.contains("hello") || x.contains("user")).forEach(System.out::println);
-            System.out.println(context.getBean("user.FeignClientSpecification"));
-            System.out.println(context.getBean("userFeignClient"));
-
-            test();
+            for (int i = 0; i < 10; i++) {
+                test();
+            }
         };
     }
 
