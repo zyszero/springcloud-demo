@@ -32,8 +32,7 @@ public class HelloController implements HelloApiService {
     }
 
 
-    @GetMapping("/api/hello/c")
-    public String c(@RequestParam("name") String name) {
+    public String c(String name) {
         return "hello c, " + name + " form " + port;
     }
 }

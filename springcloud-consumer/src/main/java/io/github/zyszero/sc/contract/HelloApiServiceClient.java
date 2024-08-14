@@ -13,6 +13,5 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 @FeignClient(value = "helloService", contextId = "hello")
 public interface HelloApiServiceClient extends HelloApiService {
-    @GetMapping("/api/hello/c")
-    String c(@RequestParam("name") String name);
+
 }

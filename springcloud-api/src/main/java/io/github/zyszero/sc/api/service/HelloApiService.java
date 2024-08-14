@@ -19,4 +19,7 @@ public interface HelloApiService {
 
     @GetMapping("/api/hello/b")
     String b(@RequestParam("name") String name);
+
+    @GetMapping("/api/hello/c")
+    String c(@RequestParam("name") String name);
 }
