@@ -1,0 +1,11 @@
+### GET hello/hi
+GET http://localhost:9000/api/hello/hi
+
+### GET hello/a
+GET http://localhost:9000/api/hello/a?name=zyszero
+
+### GET user/list
+GET http://localhost:9000/api/user/list?name=zyszero
+
+### GET user/find
+GET http://localhost:9000/api/user/find?id=100

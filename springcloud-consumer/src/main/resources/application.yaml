@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: hello-server-consumer
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.200.38:8848
+
+
+#server:
+#  port: 9100

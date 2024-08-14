@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: helloService
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.200.38:8848
+        heartbeat-interval: 500
+        heart-beat-timeout: 5000
+
+server:
+  port: 9000
+
+
