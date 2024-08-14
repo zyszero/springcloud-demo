@@ -7,10 +7,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * hello client
+ *
  * @Author: zyszero
  * @Date: 2024/8/12 20:24
  */
 @FeignClient(value = "helloService", contextId = "hello")
 public interface HelloApiServiceClient extends HelloApiService {
-
+    @GetMapping("/api/hello/c")
+    String c(@RequestParam("name") String name);
 }

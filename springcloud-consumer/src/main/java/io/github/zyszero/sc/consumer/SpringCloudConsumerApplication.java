@@ -65,6 +65,9 @@ public class SpringCloudConsumerApplication {
         hello = helloServiceClient.b("zzz");
         System.out.println(" ==> helloService.b : " + hello);
 
+        hello = helloServiceClient.c("ccc");
+        System.out.println(" ==> helloService.c : " + hello);
+
         User user123 = userServiceClient.findById(123);
         System.out.println(" ==> helloService.findById : " + user123);
     }
