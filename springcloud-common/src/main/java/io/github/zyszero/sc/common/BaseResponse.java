@@ -5,5 +5,5 @@ package io.github.zyszero.sc.common;
  * @Author: zyszero
  * @Date: 2024/8/15 0:34
  */
-public class BaseResponse {
+public class BaseResponse<T> {
 }
